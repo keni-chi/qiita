@@ -180,12 +180,12 @@ END RequestId: f12ed855-e842-533b-bfca-8ca009824997
 REPORT RequestId: f12ed855-e842-533b-bfca-8ca009824997	Duration: 4.60 ms	Billed Duration: 100 ms Memory Size: 128 MB	Max Memory Used: 63 MB	
 ```
 
-#### SQSトリガーのバッチサイズ
+### SQSトリガーのバッチサイズ
 
-##### バッチサイズが1
+#### バッチサイズが1
 1メッセージずつ処理する。
 
-##### バッチサイズが3
+#### バッチサイズが3
 2メッセージ以上、メッセージを取り出すことがある。
 
 
