@@ -40,15 +40,16 @@ def sns_pairplot(df):
 
 
 def sns_heatmap(df):
-    cols = df.columns
+    cols1 = df.columns
+    cols2 = ['y1', 'y2', 'y3', 'y4', 'y5']
     hm = sns.heatmap(df,
                      cbar=True,
                      annot=True,
                      square=True,
                      fmt='.2f',
                      annot_kws={'size': 15},
-                     yticklabels=cols,
-                     xticklabels=cols)
+                     yticklabels=cols2,
+                     xticklabels=cols1)
     plt.tight_layout()
     plt.savefig('sns_heatmap.png', dpi=300)
     plt.show()
