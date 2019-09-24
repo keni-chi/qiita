@@ -81,12 +81,12 @@ cat deviceCert.crt rootCA.pem > deviceCertAndCACert.crt
 #### IoT Core
 
 - 検証用証明書の登録先エンドポイントを取得  
-{入力値※１} に必要です。AWSのアカウントおよびリージョン毎に値が変わります。  
+{入力値※１} に必要です。AWSのアカウントおよびリージョン毎に値が変わる。  
 aws iot get-registration-code  
 >> "registrationCode": "{入力値※１}"  
 
 - プロビジョニングテンプレートを作成  
-provisioning-template.jsonを準備。  
+provisioning-template.jsonを準備する。  
 プロビジョニングテンプレートの記載方法は[ジャストインタイムのプロビジョニング](##参考)を参照。  
 プロビジョニングテンプレート内の"templateBody"の値はString型なので見づらいので、jsonファイルで記載しておきStringへ変換するIaCプログラムを用意するなどがおすすめ。 
 
